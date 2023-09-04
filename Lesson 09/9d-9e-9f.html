@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9d-9e-9f</title>
+</head>
+<body>
+  <input placeholder="Name" class="js-input" type="text" onkeydown="
+    if (event.key === 'Enter') {
+      display();
+    }
+    ">
+
+  <button onclick="display()">Submit</button>
+
+  <p class="msg"></p>
+
+  <script>
+    function display() {
+      const inputElement = document.querySelector('.js-input');
+      document.querySelector('.msg'). innerHTML = `Your Name is: ${inputElement.value}`;
+    }
+  </script>
+</body>
+</html>
