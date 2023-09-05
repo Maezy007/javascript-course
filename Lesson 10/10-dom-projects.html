@@ -2,12 +2,33 @@
 <html>
   <head>
     <title>DOM Projects</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .sub-btn {
+        border: none;
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .is-sub {
+        background-color: rgb(240, 240, 240);
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <p>YouTube Subscribe Button</p>
     <button onclick="
       subscribe();
-    " class="js-subscribe-button">
+    " class="js-subscribe-button sub-btn">
       Subscribe
     </button>
 
@@ -52,8 +73,10 @@
 
         if (buttonElement.innerText === 'Subscribe') {
           buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('is-sub');
         } else {
           buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('is-sub');
         }
       }
       
