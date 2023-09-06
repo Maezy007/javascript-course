@@ -1,4 +1,12 @@
-let todoList = [];
+let todoList = ['maker dinner', 'wash dishes'];
+
+let todoListHTML = '';
+
+for (let i = 0; i < todoList.length; i++) {
+  let todo = todoList [i]
+  const html = `<p>${todo}</p>`;
+  todoListHTML += html;
+}
 
 function addTodo() {
   let inputElement = document.querySelector('.js-input');
