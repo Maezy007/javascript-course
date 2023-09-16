@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.todo-input-grid input {
+  padding: 6px;
+  font-size: 15px;
+}
+
+.todo-input-grid button {
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.todo-grid button {
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
